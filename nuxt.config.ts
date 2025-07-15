@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   ssr: true,
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
-  modules: ['@pinia/nuxt'],
+  modules: ['@pinia/nuxt','nuxt-simple-sitemap'],
   css: ['~/assets/css/main.css'],
   postcss: {
     plugins: {
@@ -11,7 +11,15 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+   runtimeConfig: {
+    public: {
+      siteUrl: 'https://my-works-nuxt.vercel.app' // 提供 sitemap 用的網址來源
+    }
+  },
   nitro: {
     preset: 'vercel'
+  },
+  sitemap: {
+    xsl: false,
   }
 })
