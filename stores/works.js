@@ -9,7 +9,7 @@ export const useWorksStore = defineStore('works', () => {
 
   const token = useCookie('token')
   const config = useRuntimeConfig()
-  const baseURL = config.public.apiBase || 'https://dean-works.onrender.com'
+  const baseURL = config.public.apiBase || 'https://dean-works-y706.onrender.com'
 
   // 共用 headers
   const getHeaders = () => {

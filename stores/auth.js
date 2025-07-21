@@ -20,7 +20,7 @@ export const useAuthStore = defineStore('auth', () => {
     loading.value = true
     error.value = ''
     try {
-      const res = await fetch('https://dean-works.onrender.com/auth/login', {
+      const res = await fetch('https://dean-works-y706.onrender.com/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password }),
