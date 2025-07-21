@@ -5,6 +5,11 @@ import { useRouter } from 'vue-router'
 import { storeToRefs } from 'pinia'
 import Loading from '@/components/Loading.vue'
 
+useHead({
+  title: "後臺登入 - Dean Liu 個人作品集",
+  meta: [{ name: "description", content: "作品集系統後臺登入" }],
+});
+
 const authStore = useAuthStore()
 const { loading, error } = storeToRefs(authStore)
 
