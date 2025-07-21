@@ -1,6 +1,6 @@
 <template>
     <header class="bg-primary-light">
-      <ul class="flex justify-end gap-4 p-2 text-[18px] text-primary font-bold">
+      <ul class="flex justify-center gap-4 p-2 text-[18px] text-primary font-bold">
         <li>
           <nuxt-link to="/" class="p-1 rounded-[5px] hover:bg-accent1/50 transition duration-300"
             >首頁</nuxt-link
